@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Masdar × Salesforce: proposed demo story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="hero">
+  <div class="hero-in">
+    <div class="brands"><img src="assets/mbm-logo-white.svg" alt="Masdar" class="mbm"><span class="x">×</span><img src="assets/salesforce-logo.svg" alt="Salesforce" class="sf-logo"></div>
+    <p class="eyebrow">Proposed demo story · for your review</p>
+    <h1>One connected system<br>for Masdar</h1>
+    <p class="lead">Marketing that builds on the customer data your sales teams have collected in Salesforce for over a year. Email, WhatsApp, your website and your sales teams all work from one customer profile.</p>
+    <ul class="how">
+      <li><b>Scroll</b> through the story we propose to demo.</li>
+      <li><b>Watch your requirements</b> tick off as each part covers them.</li>
+      <li><b>Choose</b> “Yes, show this” or “Skip” for each part, then send us your choices.</li>
+    </ul>
+    <p class="fine">Faisal and Al-Bina Contracting are fictional examples. Products and prices are from masdaronline.com.</p>
+    <a href="#act0" class="cta light">Start the story ↓</a>
+  </div>
+</header>
+<div class="layout">
+  <main id="story">
+    <div id="acts"></div>
+    <section id="extras"><h2 class="section-title">Optional add-ons</h2><p class="lead">Extra capabilities we can include on request.</p><div id="addons"></div></section>
+    <section id="summary"><h2 class="section-title">Your choices</h2><p class="lead">Your choices are kept in this browser while you review. When you are ready, send them to us. It opens an email you can review first.</p><ul id="summary-list"></ul><div class="send-row"><a id="send" class="cta" href="#">Send our choices to Salesforce</a><button type="button" id="copy" class="ghost">Copy my choices</button></div>
+<p id="send-warn" class="warn" hidden>Your comments are long, so some email apps may cut them off. Use “Copy my choices” and paste them into an email instead.</p>
+<p id="copy-status" role="status"></p>
+<textarea id="copy-box" rows="8" hidden readonly aria-label="Your choices as text"></textarea></section>
+  </main>
+  <aside id="tracker" aria-label="Your requirements">
+    <div id="tracker-head"><strong>Your requirements</strong> <span id="tracker-count"></span><button type="button" id="tracker-toggle" aria-expanded="false" aria-controls="tracker-list">Show list</button></div>
+    <div id="tracker-list"></div>
+  </aside>
+</div>
+<script type="module" src="js/main.js"></script>
+<footer><p>Prepared for Masdar by Salesforce · Draft for discussion</p></footer>
+</body>
+</html>
